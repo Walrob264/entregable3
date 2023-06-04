@@ -1,0 +1,27 @@
+.form_Search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.form {
+  background-color: white;
+  border-radius: 0.5em 0 0 0.5em;
+  padding: 0.5em;
+}
+.button__Search {
+  background-color: rgb(10, 187, 4);
+  border-radius: 0 0.5em 0.5em 0;
+  padding: 0.5em;
+}
+@media (min-width: 700px) {
+  .form {
+    padding: 0.7em;
+    font-size: 1rem;
+  }
+  .button__Search {
+    padding: 0.7em;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,85 @@
+.resident-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 1.5em;
+  padding: 1em;
+  justify-items: center;
+  align-items: center;
+}
+
+.resident {
+  font-size: 1rem;
+  width: 100%;
+  max-width: 350px;
+  background-color: #062226;
+  color: white1;
+  border-radius: 0.8em;
+  overflow: hidden;
+}
+.resident__header {
+  position: relative;
+}
+.resident__status {
+  position: absolute;
+  top: 15%;
+  width: 40%;
+  min-width: 100px;
+  background-color: #062226;
+  padding: 0.2em 0.5em;
+  border-radius: 0 0.5em 0.5em 0;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: white;
+}
+
+.resident__circle {
+  display: block;
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.Alive {
+  background-color: rgb(32, 147, 32);
+}
+.Dead {
+  background-color: rgb(163, 0, 0);
+}
+.resident__body {
+  color: white;
+}
+.resident__name {
+  text-align: center;
+  padding: 0.5em;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.resident__hr {
+  border-color: #135964;
+  width: 90%;
+}
+.resident__list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+.resident__label {
+  padding-left: 2em;
+  color: rgb(148, 148, 148);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.resident__value {
+  padding-left: 1em;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 750px) {
+  .resident-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    padding: 3em;
+    gap: 1em;
+  }
+}
